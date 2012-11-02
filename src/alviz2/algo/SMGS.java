@@ -4,6 +4,7 @@ package alviz2.algo;
 import java.util.LinkedList;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
@@ -45,7 +46,7 @@ public class SMGS implements Algorithm<Node, Edge> {
     private int iterCnt;
     private ColorPalette palette;
     
-    public int memory_size = 4;
+    public int memory_size = 100;
 
     public static class VFac implements VertexFactory<Node> {
         int id;
@@ -93,6 +94,8 @@ public class SMGS implements Algorithm<Node, Edge> {
         for (Node n : start) {
             this.start = n;
         }
+        this.start.makeUnprunable ();
+        this.start.setCost (0);
 
         for (Node n : graph.vertexSet()) {
             npr.setVisible(n, true);
@@ -135,13 +138,19 @@ public class SMGS implements Algorithm<Node, Edge> {
 		for (Node node: open_closed) {
 		    if (Graphs.neighborListOf (graph, node).contains (parents.get (node))) {
 		        Node parent = parents.get (node);
-		        while (closed.contains (parent) && parent.shouldBePruned ()) {
+		        while (closed.contains (parent) &&
+		               parent.shouldBePruned () &&
+		               parent != start) {
+		            if (parent == start) {
+		                System.out.println ("start node");
+		                System.out.println (parent);
+		            }
 		            parent = parents.get (parent);
 		        }
 		        if (parent != parents.get (node)) {
 		            // Parent is actually a relay node now.
 		            parents.put (node, parent);
-		            parent.makeUnprunable ();
+		            if (parent != null) parent.makeUnprunable ();
 		        }
 		    }
 		}
@@ -155,9 +164,10 @@ public class SMGS implements Algorithm<Node, Edge> {
     }
     
     public void expandNode (Node node) {
-		for (Node child : Graphs.neighborListOf(graph, node)) {
+        List <Node> children = Graphs.neighborListOf (graph, node);
+        node.setPruneCount (children.size ());
+		for (Node child : children) {
 		    if (open.contains (child)) {
-		            child.reducePruneCount ();
 		            double path_cost = node.getCost ()
 		                               + graph.getEdge (node, child).getCost ();
 		            if (path_cost < child.getCost ()) {
@@ -167,10 +177,10 @@ public class SMGS implements Algorithm<Node, Edge> {
 		    }
 		    else if (closed.contains (child)) {
 		        child.reducePruneCount ();
+		        node.reducePruneCount ();
 		    }
 		    // Now, generate new node.
 		    else {
-		        child.setPruneCount (Graphs.neighborListOf(graph, child).size()-1);
 		        double path_cost = node.getCost ()
 		                + graph.getEdge (node, child).getCost ();
 		        child.setCost (path_cost);
@@ -196,7 +206,8 @@ public class SMGS implements Algorithm<Node, Edge> {
         }
 
         Node n = null;
-        while(!open.isEmpty() && (n == null || closed.contains(n))) {
+        
+        while(!open.isEmpty()) {
             // Choose a node from open with minimum cost.
             Node min_node = open.get (0);
             for (Node node : open) {
@@ -205,6 +216,8 @@ public class SMGS implements Algorithm<Node, Edge> {
                 }
             }
             n = min_node;
+            if (closed.contains (n)) open.remove (n);
+            else break;
         }
 
         if (n == null) {
@@ -226,9 +239,23 @@ public class SMGS implements Algorithm<Node, Edge> {
             Node parent = parents.get(curNode);
             Color edgeColor = palette.getColor("edge.path");
             while (parent != null) {
-                Edge e = graph.getEdge(curNode, parent);
-                epr.setBold(e, true);
-                epr.setStrokeColor(e, edgeColor);
+                if (Graphs.neighborListOf (graph, curNode).contains (parent)) {
+                    // It is really a parent and not a relay node.
+                    Edge e = graph.getEdge(curNode, parent);
+                    epr.setBold(e, true);
+                    // epr.setStrokeColor(e, edgeColor);
+                }
+                else {
+                    /*
+                    SMGS recursive_invocation = new SMGS ();
+                    Set <Node> start_nodes = new HashSet <> ();
+                    start_nodes.add (curNode);
+                    Set <Node> goal_nodes = new HashSet <> ();
+                    goal_nodes.add (parent);
+                    recursive_invocation.setGraph (graph, npr, epr, start_nodes, goal_nodes);
+                    while (recursive_invocation.executeSingleStep ()) {};
+                    */
+                }
                 curNode = parent;
                 parent = parents.get(curNode);
             }

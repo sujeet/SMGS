@@ -16,7 +16,7 @@ public class Node {
 	Color fillColor;
 	double cost;
 	boolean visible;
-	int prune_count; // Prune off when reaches 0
+	int prune_count = -1; // Prune off when reaches 0
 	// prune_count = -1 means never prune.
 	
 	public void reducePruneCount () {
@@ -76,6 +76,7 @@ public class Node {
 		fillColor = ColorPalette.getInstance().getColor("node.default");
 		cost = 0;
 		visible = false;
+		prune_count = -1;
 	}
 
 	public int getId() {
