@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane fx:id="rootPane" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml" fx:controller="alviz2.app.AlvizController">
+  <center>
+    <ScrollPane prefHeight="200.0" prefWidth="200.0">
+      <content>
+        <Group id="Group" fx:id="canvasPane" />
+      </content>
+    </ScrollPane>
+  </center>
+  <top>
+    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="1000.0" BorderPane.alignment="TOP_LEFT" BorderPane.margin="$x1">
+      <children>
+        <HBox maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0">
+          <children>
+            <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleFileNew" text="New" fx:id="menuFileNew" />
+                    <MenuItem mnemonicParsing="false" onAction="#handleFileSaveGraph" text="Save Graph" fx:id="menuFileSaveGraph" />
+                    <MenuItem disable="true" mnemonicParsing="false" onAction="#handleFilePipe" text="Pipe" fx:id="menuFilePipe" />
+                    <MenuItem mnemonicParsing="false" onAction="#handleFileClose" text="Close" />
+                  </items>
+                </Menu>
+                <Menu disable="true" mnemonicParsing="false" text="Algo" fx:id="menuAlgo" />
+                <Menu disable="true" mnemonicParsing="false" text="Graph" fx:id="menuGraph" />
+                <Menu disable="true" mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </children>
+          <VBox.margin>
+            <Insets fx:id="x1" />
+          </VBox.margin>
+        </HBox>
+        <HBox alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" spacing="5.0">
+          <children>
+            <Button id="chartsButton" mnemonicParsing="false" onAction="#handleChartsButton" text="Charts" />
+            <Button fx:id="startButton" disable="true" mnemonicParsing="false" onAction="#handleAlgoStart" text="Start" />
+            <Button fx:id="stopButton" disable="true" mnemonicParsing="false" onAction="#handleAlgoStop" text="Stop" />
+            <Button fx:id="stepButton" disable="true" mnemonicParsing="false" onAction="#handleAlgoStep" text="Step" />
+            <Slider fx:id="algoUpdCycle" disable="true" max="1000.0" min="10.0" prefWidth="237.0" snapToTicks="true" value="100.0" />
+          </children>
+          <VBox.margin>
+            <Insets left="2.0" />
+          </VBox.margin>
+        </HBox>
+      </children>
+    </VBox>
+  </top>
+</BorderPane>

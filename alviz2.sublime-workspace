@@ -1,0 +1,2088 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"algo",
+				"algoBundles"
+			],
+			[
+				"Alv",
+				"AlvizController"
+			],
+			[
+				"ca",
+				"catch"
+			],
+			[
+				"cl",
+				"cl	class"
+			],
+			[
+				"appsta",
+				"AppState"
+			],
+			[
+				"RU",
+				"RUN_PENDING"
+			],
+			[
+				"appstat",
+				"appStateMachine"
+			],
+			[
+				"menuf",
+				"menuFilePipe"
+			],
+			[
+				"ALgoBu",
+				"AlgoVizBundle"
+			],
+			[
+				"curAlgo",
+				"curAlgoClass"
+			],
+			[
+				"PIP",
+				"PIPE_SELECT"
+			],
+			[
+				"appstate",
+				"AppState"
+			],
+			[
+				"pipe",
+				"menuFilePipe"
+			],
+			[
+				"runnin",
+				"stateRunningEnter"
+			],
+			[
+				"null",
+				"nullRunnable"
+			],
+			[
+				"canva",
+				"canvasWidth"
+			],
+			[
+				"gridL",
+				"gridLen-1"
+			],
+			[
+				"grid",
+				"gridLen-1"
+			],
+			[
+				"Colo",
+				"ColorPalette"
+			],
+			[
+				"create",
+				"createVertex"
+			],
+			[
+				"le",
+				"levelSep"
+			],
+			[
+				"config",
+				"configPath"
+			],
+			[
+				"Random",
+				"RandomTSP"
+			],
+			[
+				"open",
+				"openListSeries"
+			],
+			[
+				"close",
+				"closedListSeries"
+			],
+			[
+				"RandomGraph",
+				"RandomGraphGenerator"
+			],
+			[
+				"pare",
+				"parents"
+			],
+			[
+				"Al",
+				"AlgorithmRequirements"
+			],
+			[
+				"cur",
+				"curStartNodes"
+			],
+			[
+				"gr",
+				"grphInpDlg"
+			],
+			[
+				"get",
+				"getY"
+			],
+			[
+				"Mouse",
+				"MouseButton"
+			],
+			[
+				"java",
+				"javafx"
+			],
+			[
+				"Fi",
+				"fillOval"
+			],
+			[
+				"getMin",
+				"getMinX"
+			],
+			[
+				"dis",
+				"distToNearPt"
+			],
+			[
+				"near",
+				"nearest"
+			],
+			[
+				"can",
+				"canvasHeight"
+			],
+			[
+				"ge",
+				"getX"
+			],
+			[
+				"Grap",
+				"GraphicsContext"
+			],
+			[
+				"Gri",
+				"GridPaneBuilder"
+			],
+			[
+				"Poi",
+				"Point2D"
+			],
+			[
+				"getMax",
+				"getMaxY"
+			],
+			[
+				"Po",
+				"Point2D"
+			],
+			[
+				"Int",
+				"IntegerRangeValidator"
+			],
+			[
+				"ne",
+				"nextNode"
+			],
+			[
+				"getE",
+				"getEdgeSource"
+			],
+			[
+				"menu",
+				"menuAlgo"
+			],
+			[
+				"act",
+				"activeVizs"
+			],
+			[
+				"active",
+				"activeVizs"
+			],
+			[
+				"stop",
+				"stopButton"
+			],
+			[
+				"step",
+				"stepButton"
+			],
+			[
+				"Arra",
+				"ArrayList"
+			],
+			[
+				"Arr",
+				"ArrayList"
+			],
+			[
+				"Com",
+				"CompleteGraphGenerator"
+			],
+			[
+				"Menu",
+				"MenuItem"
+			],
+			[
+				"Graph",
+				"GraphFactory"
+			],
+			[
+				"Gra",
+				"GraphFactory"
+			],
+			[
+				"Algo",
+				"AlgoMenuHandler"
+			],
+			[
+				"hei",
+				"heightDiff"
+			],
+			[
+				"B",
+				"BLACK"
+			],
+			[
+				"getEd",
+				"getEdgeTarget"
+			],
+			[
+				"For",
+				"ForceEnergyLayout"
+			],
+			[
+				"windo",
+				"windowSize"
+			],
+			[
+				"Beat",
+				"BeatSpeedListener"
+			],
+			[
+				"star",
+				"startRun"
+			],
+			[
+				"be",
+				"beatTimer"
+			],
+			[
+				"beat",
+				"beatSpeed"
+			],
+			[
+				"add",
+				"addVertexListener"
+			],
+			[
+				"Simple",
+				"SimpleCanvas"
+			],
+			[
+				"gene",
+				"generateGraph"
+			],
+			[
+				"al",
+				"Algorithm"
+			],
+			[
+				"Edge",
+				"EdgeFactory"
+			],
+			[
+				"getGe",
+				"getGenerator"
+			],
+			[
+				"getH",
+				"getWidth"
+			],
+			[
+				"EdgePos",
+				"EdgePosChangeEvent"
+			],
+			[
+				"Vertex",
+				"VertexStyleChangeEvent"
+			],
+			[
+				"Verte",
+				"VertexListener"
+			],
+			[
+				"gra",
+				"graphito"
+			],
+			[
+				"p",
+				"pl	println"
+			],
+			[
+				"draw",
+				"drawTo"
+			],
+			[
+				"dra",
+				"drawTo"
+			],
+			[
+				"Std",
+				"StdOut"
+			],
+			[
+				"compare",
+				"compareTo"
+			],
+			[
+				"slope",
+				"slopeTo"
+			],
+			[
+				"compar",
+				"compareTo"
+			],
+			[
+				"Para",
+				"ParallelCoordsVisualizer"
+			],
+			[
+				"QPa",
+				"QParallelCoordsWidget"
+			],
+			[
+				"axis",
+				"axisData"
+			],
+			[
+				"scale",
+				"scale"
+			],
+			[
+				"axisda",
+				"axis_data"
+			],
+			[
+				"axi",
+				"axis_x"
+			],
+			[
+				"axis_",
+				"axis_x"
+			],
+			[
+				"sele",
+				"selectedAxis"
+			],
+			[
+				"view",
+				"viewportSize"
+			],
+			[
+				"re",
+				"requestTile"
+			],
+			[
+				"axisSe",
+				"isAxisSelected"
+			],
+			[
+				"curr",
+				"curr_rect"
+			],
+			[
+				"Paa",
+				"ParallelCoordsRenderThread"
+			],
+			[
+				"verti",
+				"verticalScrollBar"
+			],
+			[
+				"QP",
+				"QPainter"
+			],
+			[
+				"start",
+				"start_pos"
+			],
+			[
+				"Ax",
+				"axis_view_data"
+			],
+			[
+				"ax",
+				"axis_data"
+			],
+			[
+				"doLa",
+				"doLayout"
+			],
+			[
+				"axisP",
+				"axisPenWidth"
+			],
+			[
+				"scla",
+				"scaleFactors"
+			],
+			[
+				"scal",
+				"scale_x"
+			],
+			[
+				"Paral",
+				"ParallelCoordsRenderManager"
+			],
+			[
+				"Parall",
+				"ParallelCoordsRenderer"
+			],
+			[
+				"rende",
+				"renderManager"
+			],
+			[
+				"Parallel",
+				"ParallelCoordsRenderThread"
+			],
+			[
+				"poyl",
+				"polyLineSet"
+			],
+			[
+				"Qpo",
+				"QPolygonF"
+			],
+			[
+				"para",
+				"ParallelCoordsRenderManager"
+			],
+			[
+				"img",
+				"imgCache"
+			],
+			[
+				"sca",
+				"scaleFactors_"
+			],
+			[
+				"axs",
+				"axisOffset"
+			],
+			[
+				"parent",
+				"parentViewportSize"
+			],
+			[
+				"anh",
+				"anchorMargin"
+			],
+			[
+				"viw",
+				"viewport"
+			],
+			[
+				"QO",
+				"Q_OBJECT"
+			],
+			[
+				"thre",
+				"threadingThreshold"
+			],
+			[
+				"render",
+				"renderThread"
+			],
+			[
+				"anchor",
+				"anchorMargin"
+			],
+			[
+				"QPain",
+				"QPainter"
+			],
+			[
+				"polyLi",
+				"polyLineSet"
+			],
+			[
+				"doL",
+				"doLayout_"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/alviz2/app/Alviz.java",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/app/Visualizer.java",
+			"settings":
+			{
+				"buffer_size": 1947,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/app/AlvizController.java",
+			"settings":
+			{
+				"buffer_size": 15925,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/app/ChartDialog.java",
+			"settings":
+			{
+				"buffer_size": 1753,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/util/StateMachine.java",
+			"settings":
+			{
+				"buffer_size": 1477,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/app/AppConfig.java",
+			"settings":
+			{
+				"buffer_size": 133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/util/PointIndex2D.java",
+			"settings":
+			{
+				"buffer_size": 5063,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/algo/Algorithm.java",
+			"settings":
+			{
+				"buffer_size": 562,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/AppStateMachine.dot",
+			"settings":
+			{
+				"buffer_size": 452,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/algo/DFS.java",
+			"settings":
+			{
+				"buffer_size": 4210,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/algo/BFS.java",
+			"settings":
+			{
+				"buffer_size": 5331,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/graph/Edge.java",
+			"settings":
+			{
+				"buffer_size": 1804,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/util/GraphInputDialog.java",
+			"settings":
+			{
+				"buffer_size": 4808,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/algo/GreedyTSP.java",
+			"settings":
+			{
+				"buffer_size": 2409,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/algo/RandomTSP.java",
+			"settings":
+			{
+				"buffer_size": 2526,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/util/GraphInit.java",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/alviz2/graph/Node.java",
+			"settings":
+			{
+				"buffer_size": 1601,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Java/Ant.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rien",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"bro",
+				"SFTP: Browse Server…"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"SFTP: Browse Server…"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #ifndef … #define … #endif"
+			],
+			[
+				"toggle",
+				"Toggle Block Comment"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"listpac",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Anand/Documents/Projects/alviz2-project/dist/alviz2.config",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/factory/GraphFactory.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/GraphUtils.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/AlvizController.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/LineIndex.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/Edge.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/Node.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/ColorPalette.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/GraphInputDialog.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/docs/AppStateMachine.dot",
+		"/C/Users/Anand/Documents/Scrap/Continuations.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/AppState.java",
+		"/C/Users/Anand/Google Drive/IITM/campus_news/campus_sem1.tex",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/graph/factory/GraphFactory.java",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/graph/factory/RandomGraph.java",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/graph/BaseGraph.java",
+		"/C/Users/Anand/Downloads/Sweep.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/GraphInit.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/InputDialog.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/algo/RandomTSP.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/algo/Algorithm.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/factory/CompleteGraphFactory.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/factory/GameTree.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/algo/DFS.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/algo/GreedyTSP.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/factory/RandomGraphFactory.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/GraphType.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/factory/RandomGridGraph.java",
+		"/C/Users/Anand/AppData/Roaming/Sublime Text 2/Packages/User/test_macro.sublime-macro",
+		"/C/Users/Anand/Documents/Markdown_1.0.1/Markdown Readme.text",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/algo/AlgoDatabase.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/build.xml",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/Visualizer.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/Alviz.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/PointIndex2D.java",
+		"/C/Users/Anand/Documents/Coursera/Algorithms I Princeton/kd-tree/KdTree.java",
+		"/C/Users/Anand/Documents/Coursera/Algorithms I Princeton/kd-tree/RectHV.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/Alviz.fxml",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/alviz2.sublime-project",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/dist/alviz2-20121011.jar",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/InputValidator.java",
+		"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/IntegerRangeValidator.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/graph/Edge.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/util/AlgorithmRequirements.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/util/GraphUtils.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/util/GraphInit.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/GreedyTSP.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/build.xml",
+		"/C/Users/Anand/Desktop/WD test results.txt",
+		"/C/Users/Anand/Desktop/aigame/arunchaganty-Desdemona-ecf92a1/bots/MyBot/MyBot.cpp",
+		"/C/Users/Anand/Desktop/aigame/arunchaganty-Desdemona-ecf92a1/src/OthelloPlayer.cpp",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/RandomTSP.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/app/Visualizer.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/graph/factory/GraphFactory.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/app/Alviz.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/app/AlvizController.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/graph/factory/CompleteGraphFactory.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/BlinkAlgo.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/BlinkAlgo1.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/graph/factory/GraphUtils.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/graph/Node.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/graph/factory/GraphCloneFactory.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/Algorithm.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/util/GraphType.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/util/RequirementSpec.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/util/GraphTypeToken.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/GraphTypeToken.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/GraphInputToken.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/app/Alviz.fxml",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/app/Graphito.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/src/alviz2/algo/GraphInputTokens.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/algorithm/Algorithm.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/algorithm/DemoAlgorithm.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/Edge.java",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/dist/alviz2.jar",
+		"/C/Users/Anand/AppData/Roaming/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Anand/Dropbox/Projects/alviz2-project/alviz2/app/Alviz.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/visualizer/Canvas.java",
+		"/C/Users/Anand/Documents/Scrap/ClassPathPrinter.java",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/main/Application.java",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/main/AFrame.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/layout/ForceEnergyLayout.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/visualizer/SimpleCanvas.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/Vertex.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/cr.bat",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/visualizer/GraphVisualizer.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/layout/Layouter.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/test/LayoutTest.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/layout/Vector2D.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/layout/ForceLayout.java",
+		"/C/Users/Anand/Desktop/LayoutTest.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/VertexListener.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/.gitignore",
+		"/C/Users/Anand/Documents/Java/alviz2/alviz2/src/alviz2/generics/outer/code/BFS3.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/algorithm/DemoAlgorith.java",
+		"/C/Users/Anand/Documents/Scrap/GenericTest.java",
+		"/C/users/anand/appdata/local/temp/sublime-sftp-browse-1347448247/aidb_webserver_root/var/www/cs6380/index.html",
+		"/C/users/anand/appdata/local/temp/sublime-sftp-browse-1347429512/aidb_webserver_root/var/www/cs6380/index.html",
+		"/C/users/anand/appdata/local/temp/sublime-sftp-browse-1347429419/aidb_webserver_root/var/www/new/courses.php",
+		"/C/Users/Anand/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/aidb_webserver_root",
+		"/C/Users/Anand/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.sublime-settings",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/algorithm/SMG.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/visualizer/CompositorCanvas.java",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/main/GraphPanel.java",
+		"/C/Users/Anand/Documents/Scrap/alviz6/src/alviz/graph/GraphPainter.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/VertexStyleChangeEvent.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/EdgeStyleChangeEvent.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/EdgePosChangeEvent.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/VertexPosChangeEvent.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/Graphito/app/Graphito.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/EdgeListener.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/EdgeListner.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/VertexEvent.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/graphito/graph/Node.java",
+		"/C/Users/Anand/Dropbox/Projects/Graphito/Graphito/graph/layout/Layouter.java",
+		"/C/Users/Anand/Dropbox/Projects/euler/euler/graph/Node.java",
+		"/C/Users/Anand/Documents/Scrap/Java Packages/pack/pack.java",
+		"/C/Users/Anand/Documents/Scrap/Java Packages/pack/pack1/pack1.java",
+		"/C/Users/Anand/Documents/Scrap/cppopenmp.cpp",
+		"/C/Users/Anand/Documents/Scrap/assign_exp.cpp",
+		"/C/Users/Anand/Documents/Scrap/parallel_test.cpp",
+		"/C/Users/Anand/Documents/Scrap/twisted_proxy.py",
+		"/C/Users/Anand/Documents/Scrap/test.etl",
+		"/C/Users/Anand/Documents/Scrap/basicdrawing/main.cpp",
+		"/C/Users/Anand/Documents/Scrap/route1.py",
+		"/C/Users/Anand/Documents/Java/alviz2/alviz2/src/alviz2/generics/outer/base/EdgeObject.java",
+		"/C/Users/Anand/Documents/Java/alviz2/alviz2/src/alviz2/generics/outer/code/State3.java",
+		"/C/Users/Anand/Documents/Java/alviz2/alviz2/src/alviz2/generics/outer/code/Graph3.java"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<open files>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"iterCnt",
+			"private",
+			"cleanup",
+			"algobundles",
+			"p",
+			"child",
+			"parents",
+			"HashSet",
+			"curNode",
+			"stop",
+			"setColor",
+			">(",
+			"curAlgo",
+			"unchecked",
+			"unch",
+			"AppState.prevState",
+			"StateMachine.StateHandler<>",
+			"StateHandler ",
+			"CLEAN",
+			",",
+			"CLEAN",
+			"Runnable",
+			"static",
+			"SuppressWarning",
+			"curGoalNodes",
+			"curStartNodes",
+			"curGraph",
+			"abc",
+			"int",
+			"new Vis",
+			"new visua",
+			"new Visu",
+			"new Visua",
+			"graphCanvas",
+			"group",
+			"nextBoolean()",
+			"nextBool",
+			"get(",
+			"i",
+			"nodes",
+			"int",
+			"clone",
+			"e",
+			"E",
+			"e",
+			"E",
+			"e",
+			"E",
+			"N",
+			"n",
+			"N",
+			"false",
+			"curStartNodes",
+			"pt",
+			"X",
+			"x",
+			"X",
+			"x",
+			"X",
+			"false",
+			"help",
+			"Node",
+			"getY",
+			"pt",
+			"p",
+			"q",
+			"Point2D",
+			"Node",
+			"800",
+			"Group",
+			"render",
+			"centerGroup",
+			"gph",
+			"count",
+			"ps",
+			"getId",
+			"blend",
+			"RED",
+			"g",
+			"ArrayList",
+			"dist",
+			"PropertyChanger",
+			"V",
+			"FillColor",
+			"fillColor",
+			"FillColor",
+			"fillColor",
+			"FillColor",
+			"fillColor",
+			"ChangedNodes",
+			"changedNodes",
+			"ChangedNodes",
+			"changedNodes",
+			"Node",
+			"region",
+			"build",
+			"main",
+			"s",
+			"d",
+			"X",
+			"adjacent",
+			"edge",
+			"Edge",
+			"edge",
+			"Edge",
+			"edge",
+			"Edge",
+			"vertex",
+			"Vertex",
+			"vertex",
+			"Vertex",
+			"heigth",
+			"width",
+			"source",
+			"\\",
+			"Smruti",
+			"absolute",
+			"contents",
+			"Dimension",
+			"getWidth",
+			"graphics",
+			"public",
+			"jar",
+			"class",
+			"deps",
+			"VertexStyleChangeEvent",
+			"EdgeListner",
+			"Vertex"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Dimension2D.Double",
+			"public final",
+			"Vertex",
+			"dest",
+			"State",
+			"Node002",
+			"Node001",
+			"Format_ARGB32_Premultiplied",
+			"currImgValid",
+			"curr_img",
+			"canvasSize",
+			"rendererData",
+			"ParallelCoordsRenderManager",
+			"drawImage",
+			"QImage",
+			"RGB32",
+			"qreal",
+			"auto-cvy",
+			"cvy_info[i][\"speed\"]",
+			"out_complex",
+			"e{0}_{1}",
+			"\\1, file=out_simple)",
+			"\\1-{0}",
+			"{1}",
+			"{2}",
+			"{3}",
+			"{4}",
+			"{5}",
+			"{6}",
+			"{7}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{5}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{6}",
+			"{5}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{5}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{5}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{4}",
+			"{3}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"{2}",
+			"{1}",
+			"{0}",
+			"3",
+			"2",
+			"move",
+			"unwind",
+			"exit",
+			"style=\"invisible\", label=\"\", shape=\"point\"",
+			"tri"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/alviz2/app/Alviz.java",
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1025,
+								1025
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/alviz2/app/Visualizer.java",
+					"settings":
+					{
+						"buffer_size": 1947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1885,
+								1885
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/alviz2/app/AlvizController.java",
+					"settings":
+					{
+						"buffer_size": 15925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10435,
+								10435
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3781.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/alviz2/app/ChartDialog.java",
+					"settings":
+					{
+						"buffer_size": 1753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								667,
+								667
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/alviz2/util/StateMachine.java",
+					"settings":
+					{
+						"buffer_size": 1477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1309,
+								1309
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 543.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/alviz2/app/AppConfig.java",
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/alviz2/util/PointIndex2D.java",
+					"settings":
+					{
+						"buffer_size": 5063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								811,
+								811
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/alviz2/algo/Algorithm.java",
+					"settings":
+					{
+						"buffer_size": 562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								494
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "docs/AppStateMachine.dot",
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Graphviz/DOT.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/alviz2/algo/DFS.java",
+					"settings":
+					{
+						"buffer_size": 4210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1618,
+								1618
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 241.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/alviz2/algo/BFS.java",
+					"settings":
+					{
+						"buffer_size": 5331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5095,
+								5095
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/alviz2/graph/Edge.java",
+					"settings":
+					{
+						"buffer_size": 1804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1281,
+								1281
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 827.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/alviz2/util/GraphInputDialog.java",
+					"settings":
+					{
+						"buffer_size": 4808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2286,
+								2286
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/alviz2/algo/GreedyTSP.java",
+					"settings":
+					{
+						"buffer_size": 2409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2404,
+								2404
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1105.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/alviz2/algo/RandomTSP.java",
+					"settings":
+					{
+						"buffer_size": 2526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2521,
+								2521
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1119.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/alviz2/util/GraphInit.java",
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/alviz2/graph/Node.java",
+					"settings":
+					{
+						"buffer_size": 1601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1130,
+								1130
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 247.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"df",
+				"src/alviz2/algo/DFS.java"
+			],
+			[
+				"edge",
+				"src/alviz2/graph/Edge.java"
+			],
+			[
+				"node",
+				"src/alviz2/graph/Node.java"
+			],
+			[
+				"bfs",
+				"src/alviz2/algo/BFS.java"
+			],
+			[
+				"dfs",
+				"src/alviz2/algo/DFS.java"
+			],
+			[
+				"gra",
+				"src/alviz2/util/GraphInit.java"
+			],
+			[
+				"chart",
+				"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/ChartDialog.java"
+			],
+			[
+				"char",
+				"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/ChartDialog.java"
+			],
+			[
+				"contro",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"contr",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"alvizcontr",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"alvizcon",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"algor",
+				"src/alviz2/algo/Algorithm.java"
+			],
+			[
+				"alviz.ja",
+				"src/alviz2/app/Alviz.java"
+			],
+			[
+				"alviz.jav",
+				"src/alviz2/app/Alviz.java"
+			],
+			[
+				"rand",
+				"src/alviz2/algo/RandomTSP.java"
+			],
+			[
+				"greed",
+				"src/alviz2/algo/GreedyTSP.java"
+			],
+			[
+				"dfa",
+				"src/alviz2/algo/DFS.java"
+			],
+			[
+				"algo",
+				"src/alviz2/algo/Algorithm.java"
+			],
+			[
+				"control",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"graphinpu",
+				"src/alviz2/util/GraphInputDialog.java"
+			],
+			[
+				"graphinp",
+				"src/alviz2/util/GraphInputDialog.java"
+			],
+			[
+				"alviz.j",
+				"src/alviz2/app/Alviz.java"
+			],
+			[
+				"visu",
+				"src/alviz2/app/Visualizer.java"
+			],
+			[
+				"graphin",
+				"src/alviz2/util/GraphInputDialog.java"
+			],
+			[
+				"visua",
+				"src/alviz2/app/Visualizer.java"
+			],
+			[
+				"dot",
+				"docs/AppStateMachine.dot"
+			],
+			[
+				"alvizconr",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"color",
+				"src/alviz2/app/ColorPalette.java"
+			],
+			[
+				"edge.",
+				"src/alviz2/graph/Edge.java"
+			],
+			[
+				"node.",
+				"src/alviz2/graph/Node.java"
+			],
+			[
+				"colorpa",
+				"src/alviz2/app/ColorPalette.java"
+			],
+			[
+				"graphinput",
+				"src/alviz2/util/GraphInputDialog.java"
+			],
+			[
+				"graphfa",
+				"src/alviz2/graph/factory/GraphFactory.java"
+			],
+			[
+				"util",
+				"src/alviz2/util/GraphUtils.java"
+			],
+			[
+				"state",
+				"src/alviz2/util/StateMachine.java"
+			],
+			[
+				"statemac",
+				"src/alviz2/util/StateMachine.java"
+			],
+			[
+				"statemachin",
+				"src/alviz2/util/StateMachine.java"
+			],
+			[
+				"do",
+				"docs/AppStateMachine.dot"
+			],
+			[
+				"alcon",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"algori",
+				"src/alviz2/algo/Algorithm.java"
+			],
+			[
+				"poin",
+				"src/alviz2/util/PointIndex2D.java"
+			],
+			[
+				"rein",
+				"src/alviz2/util/LineIndex.java"
+			],
+			[
+				"ini",
+				"src/alviz2/util/GraphInit.java"
+			],
+			[
+				"rangri",
+				"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/graph/factory/RandomGridGraph.java"
+			],
+			[
+				"grapht",
+				"src/alviz2/util/GraphType.java"
+			],
+			[
+				"rangr",
+				"src/alviz2/graph/factory/RandomGraphFactory.java"
+			],
+			[
+				"randomfac",
+				"src/alviz2/graph/factory/RandomGraphFactory.java"
+			],
+			[
+				"colo",
+				"src/alviz2/app/ColorPalette.java"
+			],
+			[
+				"grini",
+				"src/alviz2/util/GraphInit.java"
+			],
+			[
+				"grty",
+				"src/alviz2/util/GraphType.java"
+			],
+			[
+				"graphty",
+				"src/alviz2/util/GraphType.java"
+			],
+			[
+				"input",
+				"src/alviz2/util/InputDialog.java"
+			],
+			[
+				"colorp",
+				"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/app/ColorPalette.java"
+			],
+			[
+				"nod",
+				"src/alviz2/graph/Node.java"
+			],
+			[
+				"alcontr",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"random",
+				"src/alviz2/algo/RandomTSP.java"
+			],
+			[
+				"alviz",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"grapu",
+				"src/alviz2/util/GraphUtils.java"
+			],
+			[
+				"alvicon",
+				"src/alviz2/app/AlvizController.java"
+			],
+			[
+				"gree",
+				"src/alviz2/algo/GreedyTSP.java"
+			],
+			[
+				"grapini",
+				"src/alviz2/util/GraphInit.java"
+			],
+			[
+				"comp",
+				"src/alviz2/graph/factory/CompleteGraphFactory.java"
+			],
+			[
+				"grind",
+				"/C/Users/Anand/Documents/Projects/alviz2-project/src/alviz2/util/GraphInputDialog.java"
+			],
+			[
+				"rep",
+				"*REPL* [C:\\windows\\system32\\cmd.exe]"
+			],
+			[
+				"graphi.j",
+				"graphito/app/Graphito.java"
+			],
+			[
+				"thread",
+				"src/ParallelCoordsRenderThread.cpp"
+			],
+			[
+				"manageh",
+				"src/ParallelCoordsRenderManager.h"
+			],
+			[
+				"renderman",
+				"src/ParallelCoordsRenderManager.cpp"
+			],
+			[
+				"widget.h",
+				"src/QParallelCoordsWidget.h"
+			],
+			[
+				"priva",
+				"src/ParallelCoordsViewPrivate.h"
+			],
+			[
+				"data.cpp",
+				"src/QParallelCoordsData.cpp"
+			],
+			[
+				"data.h",
+				"src/QParallelCoordsData.h"
+			],
+			[
+				"visu.h",
+				"src/ParallelCoordsVisualizer.h"
+			],
+			[
+				"parallvis",
+				"src/ParallelCoordsVisualizer.cpp"
+			],
+			[
+				"rendman.h",
+				"src/ParallelCoordsRenderManager.h"
+			],
+			[
+				"renderthr",
+				"src/ParallelCoordsRenderThread.h"
+			],
+			[
+				"renderth",
+				"src/ParallelCoordsRenderThread.cpp"
+			],
+			[
+				"paralren",
+				"src/ParallelCoordsRenderer.h"
+			],
+			[
+				"qparallelwi",
+				"src/QParallelCoordsWidget.h"
+			],
+			[
+				"",
+				"/Z/planning/thesis_work/gnd.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true
+}

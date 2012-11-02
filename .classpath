@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="deps/jdom-2.0.3.jar"/>
+	<classpathentry kind="lib" path="deps/jgrapht-jdk1.6.jar"/>
+	<classpathentry kind="lib" path="dist/alviz2-20121025.jar"/>
+	<classpathentry kind="lib" path="dist/alviz2-20121026.jar"/>
+	<classpathentry kind="lib" path="dist/jdom-2.0.3.jar"/>
+	<classpathentry kind="lib" path="dist/jgrapht-jdk1.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/sujeet/.local/jdk1.7.0_09/jre/lib/jfxrt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
