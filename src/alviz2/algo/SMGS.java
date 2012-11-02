@@ -24,6 +24,7 @@ import alviz2.graph.Edge;
 import alviz2.util.AlgorithmRequirements;
 import alviz2.util.GraphType;
 import alviz2.util.GraphInit;
+import alviz2.util.InputDialog;
 
 @AlgorithmRequirements (
     graphType = GraphType.ANY_GRAPH,
@@ -46,7 +47,9 @@ public class SMGS implements Algorithm<Node, Edge> {
     private int iterCnt;
     private ColorPalette palette;
     
-    public int memory_size = 100;
+    public int memory_size = 20;
+    
+    private LinkedList <Node> start_goal_pairs;
 
     public static class VFac implements VertexFactory<Node> {
         int id;
@@ -82,12 +85,34 @@ public class SMGS implements Algorithm<Node, Edge> {
         parents = new HashMap<>();
         openListSeries = new XYChart.Series<>();
         closedListSeries = new XYChart.Series<>();
+        start_goal_pairs = new LinkedList<> ();
         iterCnt = 0;
         palette = ColorPalette.getInstance();
     }
+    
+    private void reset (Node start, Node goal) {
+        this.start = start;
+        this.goals = new HashSet <Node> ();
+        goals.add (goal);
+        open = new LinkedList<>();
+        closed = new HashSet<>();
+        parents = new HashMap<>();
+        palette = ColorPalette.getInstance();
+        this.start.makeUnprunable ();
+        this.start.setCost (0);
+        open.push(this.start);
+        parents.put(this.start, null);
+    }
 
     @Override
-    public void setGraph(Graph<Node,Edge> graph, Node.PropChanger npr, Edge.PropChanger epr, Set<Node> start, Set<Node> goals) {
+    public void setGraph(Graph<Node,Edge> graph,
+                         Node.PropChanger npr,
+                         Edge.PropChanger epr,
+                         Set<Node> start,
+                         Set<Node> goals) {
+		Integer inp = InputDialog.getIntegerInput("SMGS", "Enter size of Memory.", 2, Integer.MAX_VALUE);
+		this.memory_size = inp;
+		
         this.graph = graph;
         this.epr = epr;
         this.npr = npr;
@@ -198,7 +223,6 @@ public class SMGS implements Algorithm<Node, Edge> {
 		}
     }
     
-    @Override
     public boolean executeSingleStep() {
 
         if (open.isEmpty()) {
@@ -227,23 +251,24 @@ public class SMGS implements Algorithm<Node, Edge> {
         open.remove (n);
         closed.add(n);
         
-        /*
         npr.setFillColor(n, Color.BLUE);
         if (parents.containsKey(n) && parents.get(n) != null) {
             epr.setStrokeColor(graph.getEdge(n, parents.get(n)), palette.getColor("edge.closed"));
         }
-        */
 
         if (goals.contains(n)) {
             Node curNode = n;
             Node parent = parents.get(curNode);
             Color edgeColor = palette.getColor("edge.path");
+            for (Node node : closed) {
+                npr.setFillColor (node, Color.MAGENTA);
+            }
             while (parent != null) {
                 if (Graphs.neighborListOf (graph, curNode).contains (parent)) {
                     // It is really a parent and not a relay node.
                     Edge e = graph.getEdge(curNode, parent);
-                    epr.setBold(e, true);
                     // epr.setStrokeColor(e, edgeColor);
+                    epr.setBold(e, true);
                 }
                 else {
                     /*
@@ -252,6 +277,11 @@ public class SMGS implements Algorithm<Node, Edge> {
                     start_nodes.add (curNode);
                     Set <Node> goal_nodes = new HashSet <> ();
                     goal_nodes.add (parent);
+                    */
+                    this.start_goal_pairs.add (parent);
+                    this.start_goal_pairs.add (curNode);
+                    
+                    /*
                     recursive_invocation.setGraph (graph, npr, epr, start_nodes, goal_nodes);
                     while (recursive_invocation.executeSingleStep ()) {};
                     */
@@ -260,7 +290,12 @@ public class SMGS implements Algorithm<Node, Edge> {
                 parent = parents.get(curNode);
             }
 
-            return false;
+            if (this.start_goal_pairs.size () == 0) return false;
+            else {
+                this.reset (start_goal_pairs.pop (), start_goal_pairs.pop ());
+                return true;
+            }
+            // return false;
         }
 
         expandNode (n);
