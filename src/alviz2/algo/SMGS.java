@@ -156,6 +156,16 @@ public class SMGS implements Algorithm<Node, Edge> {
         return new EFac();
     }
 
+    /**
+     * Remove all non-Relay nodes from CLOSED.
+     *
+     * Find all ancestor nodes. If the ancestor is not the actual
+     * parent, make the ancestor unprunable and mark it as the node's parent/ancestor.
+     *
+     * Also, if the ancestor is:
+     * + start node: make it unprunable
+     * + in OPEN: make it unprunable
+     */
     public void pruneClosedList () {
         LinkedList <Node> open_closed = new LinkedList <Node> ();
         open_closed.addAll (open);
@@ -163,9 +173,14 @@ public class SMGS implements Algorithm<Node, Edge> {
 		for (Node node: open_closed) {
 		    if (Graphs.neighborListOf (graph, node).contains (parents.get (node))) {
 		        Node parent = parents.get (node);
+                        // Get the first ancestor who is is not in
+                        // CLOSED or is not going to be pruned or who
+                        // is the Start node
 		        while (closed.contains (parent) &&
 		               parent.shouldBePruned () &&
 		               parent != start) {
+
+                            // WTH??
 		            if (parent == start) {
 		                System.out.println ("start node");
 		                System.out.println (parent);
@@ -175,6 +190,7 @@ public class SMGS implements Algorithm<Node, Edge> {
 		        if (parent != parents.get (node)) {
 		            // Parent is actually a relay node now.
 		            parents.put (node, parent);
+                            // Make it a relay node
 		            if (parent != null) parent.makeUnprunable ();
 		        }
 		    }
@@ -188,11 +204,19 @@ public class SMGS implements Algorithm<Node, Edge> {
 		}
     }
     
+    /**
+     * Expand node in the graph.
+     * 
+     * If child belongs to OPEN, update its path cost.
+     * If it belongs to CLOSED, reduce the prune counts.
+     * Else, generate the new child node and do the graph work.
+     */
     public void expandNode (Node node) {
         List <Node> children = Graphs.neighborListOf (graph, node);
         node.setPruneCount (children.size ());
 		for (Node child : children) {
 		    if (open.contains (child)) {
+                        // Update cost for child
 		            double path_cost = node.getCost ()
 		                               + graph.getEdge (node, child).getCost ();
 		            if (path_cost < child.getCost ()) {
@@ -223,6 +247,14 @@ public class SMGS implements Algorithm<Node, Edge> {
 		}
     }
     
+    /**
+     * Pick the minimum-cost node from OPEN. Mark it as CLOSED.
+     *
+     * If it is a goal node, start tracing the optimal path.
+     * Else, expand the node.
+     * 
+     * @return true iff algo is still active.
+     */
     public boolean executeSingleStep() {
 
         if (open.isEmpty()) {
@@ -231,8 +263,9 @@ public class SMGS implements Algorithm<Node, Edge> {
 
         Node n = null;
         
+        // Choose a node from OPEN with minimum cost, removing
+        // minimum-cost nodes which are also in CLOSED.
         while(!open.isEmpty()) {
-            // Choose a node from open with minimum cost.
             Node min_node = open.get (0);
             for (Node node : open) {
                 if (min_node.getCost () > node.getCost ()) {
@@ -248,21 +281,27 @@ public class SMGS implements Algorithm<Node, Edge> {
             return false;
         }
 
+        // Mark the node as CLOSED
         open.remove (n);
         closed.add(n);
         
         npr.setFillColor(n, Color.BLUE);
+        // Mark edges between CLOSED nodes
         if (parents.containsKey(n) && parents.get(n) != null) {
             epr.setStrokeColor(graph.getEdge(n, parents.get(n)), palette.getColor("edge.closed"));
         }
 
+        // Reached a goal node
         if (goals.contains(n)) {
             Node curNode = n;
             Node parent = parents.get(curNode);
             Color edgeColor = palette.getColor("edge.path");
+
+            // Colour all closed nodes
             for (Node node : closed) {
                 npr.setFillColor (node, Color.MAGENTA);
             }
+
             while (parent != null) {
                 if (Graphs.neighborListOf (graph, curNode).contains (parent)) {
                     // It is really a parent and not a relay node.
@@ -278,6 +317,8 @@ public class SMGS implements Algorithm<Node, Edge> {
                     Set <Node> goal_nodes = new HashSet <> ();
                     goal_nodes.add (parent);
                     */
+
+                    // Add <Start, Goal> pair
                     this.start_goal_pairs.add (parent);
                     this.start_goal_pairs.add (curNode);
                     
@@ -290,14 +331,17 @@ public class SMGS implements Algorithm<Node, Edge> {
                 parent = parents.get(curNode);
             }
 
+            // Done
             if (this.start_goal_pairs.size () == 0) return false;
             else {
+                // Do SMGS on a <Start, Goal> pair.
                 this.reset (start_goal_pairs.pop (), start_goal_pairs.pop ());
                 return true;
             }
             // return false;
         }
 
+        // Not a goal node
         expandNode (n);
 
         openListSeries.getData().add(new XYChart.Data<Number, Number>(iterCnt, open.size()));
@@ -311,3 +355,4 @@ public class SMGS implements Algorithm<Node, Edge> {
     public void cleanup() {
     }
 }
+

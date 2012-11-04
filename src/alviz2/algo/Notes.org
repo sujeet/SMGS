@@ -1,0 +1,11 @@
+				Notes
+
+* What is node.cost? Is it f (n) or g (n)??
+* What is pruneCount? Number of children NOT in CLOSED 
+** If all children are in CLOSED, you are prunable.
+* pruneClosedList - why do we not use just the OPEN list? Why use open-closed list?
+** The only effects seem to be to add the <node, parent/ancestor> pair in parents and make the ancestor a relay node.
+* Are there some nodes in both OPEN and CLOSED?
+* executeSingleStep ()
+  CLOCK: [2012-11-04 Sun 02:38]--[2012-11-04 Sun 03:48] =>  1:10
+

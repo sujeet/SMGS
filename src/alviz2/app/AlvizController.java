@@ -574,3 +574,4 @@ public class AlvizController implements Initializable {
 		return bundle;
 	}
 }
+
