@@ -24,11 +24,15 @@ public class Node {
 	}
 	
 	public void makeUnprunable () {
-	    prune_count = -1;
+	    this.prune_count = -1;
+	}
+	
+	public int getPruneCount () {
+	    return this.prune_count;
 	}
 	
 	public boolean shouldBePruned () {
-	    if (prune_count == 0) return true;
+	    if (this.prune_count == 0) return true;
 	    return false;
 	}
 	

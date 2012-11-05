@@ -13,12 +13,14 @@ public class ColorPalette {
 		colorStateMap = new HashMap<>();
 		colorStateMap.put("node.open", Color.RED);
 		colorStateMap.put("node.closed", Color.BLUE);
-		colorStateMap.put("node.path", Color.GREEN);
-		colorStateMap.put("node.relay", Color.DEEPPINK);
+		colorStateMap.put("node.relay", Color.LIMEGREEN);
+		colorStateMap.put("node.path", Color.DEEPPINK);
+		colorStateMap.put("node.xclosed", Color.YELLOW);
+		colorStateMap.put("node.default", Color.DIMGREY);
+		
 		colorStateMap.put("edge.open", Color.RED);
 		colorStateMap.put("edge.closed", Color.BLUE);
 		colorStateMap.put("edge.path", Color.GREEN);
-		colorStateMap.put("node.default", Color.DIMGREY);
 		colorStateMap.put("edge.default", Color.DIMGREY);
 		palette = this;
 	}

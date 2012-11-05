@@ -100,7 +100,7 @@ public class SMGS implements Algorithm<Node, Edge> {
         palette = ColorPalette.getInstance();
         this.start.makeUnprunable ();
         this.start.setCost (0);
-        open.push(this.start);
+        open.add (this.start);
         parents.put(this.start, null);
     }
 
@@ -131,7 +131,7 @@ public class SMGS implements Algorithm<Node, Edge> {
         }
 
         this.goals = goals;
-        open.push(this.start);
+        open.add (this.start);
         parents.put(this.start, null);
         npr.setFillColor(this.start, palette.getColor("node.open"));
     }
@@ -179,39 +179,55 @@ public class SMGS implements Algorithm<Node, Edge> {
 		        while (closed.contains (parent) &&
 		               parent.shouldBePruned () &&
 		               parent != start) {
-
-                            // WTH??
-		            if (parent == start) {
-		                System.out.println ("start node");
-		                System.out.println (parent);
-		            }
 		            parent = parents.get (parent);
 		        }
 		        if (parent != parents.get (node)) {
 		            // Parent is actually a relay node now.
 		            parents.put (node, parent);
                             // Make it a relay node
-		            if (parent != null) parent.makeUnprunable ();
+		            if (parent != null) {
+		                parent.makeUnprunable ();
+		                npr.setFillColor (node, palette.getColor ("node.relay"));
+		            }
+		            
+		            List <Node> neighbours = Graphs.neighborListOf (graph, node);
+		            for (Node neighbour : neighbours) {
+		                if (open.contains (neighbour)) {
+		                    node.makeUnprunable ();
+		                    npr.setFillColor (node, palette.getColor ("node.relay"));
+		                    break;
+		                }
+		            }
 		        }
 		    }
 		}
 		LinkedList <Node> to_be_removed_from_closed = new LinkedList <> ();
 		for (Node node: closed) {
-		    if (node.shouldBePruned ()) to_be_removed_from_closed.add (node);
+		    if (node.shouldBePruned ()) {
+		        to_be_removed_from_closed.add (node);
+		        if (node == start) {
+		            System.out.println (node.getPruneCount ());
+		        }
+		    }
 		}
 		for (Node node: to_be_removed_from_closed) {
 		    closed.remove (node);
+		        if (node == start) {
+		            System.out.println ("HAHA");
+		        }
+            npr.setFillColor(node, palette.getColor ("node.xclosed"));
 		}
     }
     
     /**
-     * Expand node in the graph.
+     * Expand node in the graph. (note that this node has to be in closed.)
      * 
      * If child belongs to OPEN, update its path cost.
      * If it belongs to CLOSED, reduce the prune counts.
      * Else, generate the new child node and do the graph work.
      */
     public void expandNode (Node node) {
+        assert (closed.contains (node));
         List <Node> children = Graphs.neighborListOf (graph, node);
         node.setPruneCount (children.size ());
 		for (Node child : children) {
@@ -239,7 +255,6 @@ public class SMGS implements Algorithm<Node, Edge> {
                 npr.setFillColor(child, palette.getColor("node.open"));
                 epr.setStrokeColor(graph.getEdge(node, child), palette.getColor("edge.open"));
                 
-		        // TODO: if memory full, then prune the list.
 		        if (closed.size () >= memory_size) {
 		            pruneClosedList ();
 		        }
@@ -263,19 +278,13 @@ public class SMGS implements Algorithm<Node, Edge> {
 
         Node n = null;
         
-        // Choose a node from OPEN with minimum cost, removing
-        // minimum-cost nodes which are also in CLOSED.
-        while(!open.isEmpty()) {
-            Node min_node = open.get (0);
-            for (Node node : open) {
-                if (min_node.getCost () > node.getCost ()) {
-                    min_node = node;
-                }
+        Node min_node = open.iterator ().next ();
+        for (Node node : open) {
+            if (node.getCost () < min_node.getCost ()) {
+                min_node = node;
             }
-            n = min_node;
-            if (closed.contains (n)) open.remove (n);
-            else break;
         }
+        n = min_node;
 
         if (n == null) {
             return false;
@@ -285,7 +294,7 @@ public class SMGS implements Algorithm<Node, Edge> {
         open.remove (n);
         closed.add(n);
         
-        npr.setFillColor(n, Color.BLUE);
+        npr.setFillColor(n, palette.getColor ("node.closed"));
         // Mark edges between CLOSED nodes
         if (parents.containsKey(n) && parents.get(n) != null) {
             epr.setStrokeColor(graph.getEdge(n, parents.get(n)), palette.getColor("edge.closed"));
@@ -297,10 +306,6 @@ public class SMGS implements Algorithm<Node, Edge> {
             Node parent = parents.get(curNode);
             Color edgeColor = palette.getColor("edge.path");
 
-            // Colour all closed nodes
-            for (Node node : closed) {
-                npr.setFillColor (node, Color.MAGENTA);
-            }
 
             while (parent != null) {
                 if (Graphs.neighborListOf (graph, curNode).contains (parent)) {
