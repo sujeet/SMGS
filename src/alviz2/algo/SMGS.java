@@ -168,9 +168,10 @@ public class SMGS implements Algorithm<Node, Edge> {
      */
     public void pruneClosedList () {
         LinkedList <Node> open_closed = new LinkedList <Node> ();
-        open_closed.addAll (open);
+//        open_closed.addAll (open);
         open_closed.addAll (closed);
 		for (Node node: open_closed) {
+		    if (! isBoundaryNode (node)) continue;
 		    if (Graphs.neighborListOf (graph, node).contains (parents.get (node))) {
 		        Node parent = parents.get (node);
                         // Get the first ancestor who is is not in
@@ -186,17 +187,8 @@ public class SMGS implements Algorithm<Node, Edge> {
 		            parents.put (node, parent);
                             // Make it a relay node
 		            if (parent != null) {
-		                parent.makeUnprunable ();
+		                node.makeUnprunable ();
 		                npr.setFillColor (node, palette.getColor ("node.relay"));
-		            }
-		            
-		            List <Node> neighbours = Graphs.neighborListOf (graph, node);
-		            for (Node neighbour : neighbours) {
-		                if (open.contains (neighbour)) {
-		                    node.makeUnprunable ();
-		                    npr.setFillColor (node, palette.getColor ("node.relay"));
-		                    break;
-		                }
 		            }
 		        }
 		    }
@@ -219,6 +211,16 @@ public class SMGS implements Algorithm<Node, Edge> {
 		}
     }
     
+    private boolean isBoundaryNode (Node node)
+    {
+        assert (closed.contains (node));
+        List <Node> neighbours = Graphs.neighborListOf (graph, node);
+        for (Node neighbour : neighbours) {
+            if (open.contains (neighbour)) return true;
+        }
+        return false;
+    }
+
     /**
      * Expand node in the graph. (note that this node has to be in closed.)
      * 
